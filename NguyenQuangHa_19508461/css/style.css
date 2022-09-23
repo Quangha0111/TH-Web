@@ -80,9 +80,41 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 5px;
+    border-radius: 5px;
+    width: 50px;
 
 }
 .btn:hover{
-    background-color: blueviolet;
+    background-color: rgb(67, 240, 87);
     color: aliceblue;
+}
+.search{
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.find{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: floralwhite;
+    border: 1px solid;
+    border-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+#search{
+  padding: 5px;
+}
+.search .find:hover{
+    background-color: greenyellow;
+}
+#ten{
+    float: right;
+    margin-right: 60px;
+    padding: 3px;
+}
+#MSSV{
+    float: right;
+    margin-right: 60px;
+    padding: 3px;
 }
