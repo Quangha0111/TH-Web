@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+    *{
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        background-color: antiquewhite;
+        border: 2px salmon solid;
+        height:auto;
+        width: 1089px;
+    }
+    header{
+        width: 100%;
+        height: 150px;
+        background-image: url(../img/Header.PNG);
+        position: relative;
+    }
+    /* img{
+        width: 1089px;
+        height: 150px;
+    } */
+    footer{
+        background-color: rgb(241, 236, 245);
+        width: auto;
+        height: 80px;
+    }
+    .body{
+        height: 350px;
+    }
+    p{
+        position: absolute;
+        top: 23px;
+        left: 300px;
+        font-size: xx-large;
+        text-shadow: 2px 2px red;
+
+    }
+    .menu li{
+        display: flex;
+        position: absolute;
+        background-color: aquamarine;
+        border-radius: 30px;
+        border: solid 3px royalblue;
+        left: 100px; 
+        font-size: 18px;
+        text-shadow: 2px 2px red;
+        list-style-type: none;
+        padding: 10px;
+    }
+    .menu li:hover {
+        background-color: blue;
+        color: brown;
+    }
+    .menu li:nth-child(4){
+        left: 600px;
+        top: 90px;
+    }
+    .menu li:nth-child(3){
+        left: 500px;
+        top: 90px;
+    }
+    .menu li:nth-child(2){
+        left: 400px;
+        top: 90px;
+    }
+    .menu li:nth-child(1){
+        left: 300px;
+        top: 90px;
+    }
+    #frmgo{
+        position: absolute;
+        left: 800px;
+        top: 30px;
+    }
+    #frmgo #txtsearch{
+        border-radius: 30px;
+        padding: 10px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    #frmgo #btngo{
+        border-radius: 50%;
+        padding: 10px;
+        font-weight: bold;
+
+    }
+    h3{
+        text-align: center;
+       
+    }
+    aside{
+        width: 35%;
+        height: 100%;
+            background-color: rgb(238, 210, 238);
+        float: left;
+    }
+    section{
+        width: 65%;
+        height: 100%;
+        background-color: rgb(162, 208, 226);
+        float: left;
+    }
+    .frm{
+        width: 50%;
+        margin: auto;
+    }
+.fied{
+    height: auto;
+    padding: 10px;
+}
+label{
+   font-weight: bold;
+   margin-top: 10px;
+}
+.inp{
+    padding: 8px;
+    width: 300px;
+
+}
+.btn{
+    padding: 5px;
+    border-radius:12px;
+    width: 100px;
+    float: left;
+    margin: 10px ;
+}
+h4{
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+   
+</style>
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="">Item X</a>
+                        </li>
+                        <li>
+                            <a href="">Item X</a>
+                        </li>
+                        <li>
+                            <a href="">Item X</a>
+                        </li>
+                        <li>
+                            <a href="">Item X</a>
+                        </li>
+            
+                    </ul>
+                </nav>
+                <form action="#" method="POST" id="frmgo">
+                    <input type="text" name="txtsearch" id="txtsearch" placeholder="Ban can tim gi???">
+                    <button type="submit" id="btngo">GO</button>
+                </form>
+
+            </header>
+
+            <div class="body">
+                <aside>
+                    <img src="../img/Aside1.PNG" alt="">
+                </aside>
+                <section>
+                    <form action="iuh.edu.vn" method="get" class="frm">
+                        <h4>THÔNG TIN SINH VIÊN </h4>
+                        <fieldset class="fied">
+                            <legend>FROM THÔNG TIN SINH VIÊN</legend>
+                            <div class="inp">
+                                <label for="">Họ và tên</label>
+                                <input type="text" name="tensv" id="ten"
+                                    placeholder="NGUYỄN QUANG HÀ" required>
+                            </div>
+                            <div class="inp">
+                                <label for="">MSSV</label>
+                                <input type="text" name="MSSV" id="MSSV"
+                                    placeholder="19508461" required>
+                            </div>
+                            <div class="inp">
+                                    <label for="">Ngay sinh</label>
+                                    <input type="date" name="date" id="ngaysinh">
+                               
+                            </div>
+
+                            <button  class="btn" type="reset">Refesh</button>
+                            <button class="btn" type="submit">Send</button>
+    
+                        </fieldset>
+                    </section>
+            </div>
+            <footer>
+                <h3>NGUYEN QUANG HA - 19508461</h3>
+            </footer>
+        </div>
+
+    </body>
+</html>
